@@ -1,10 +1,7 @@
-from selenium import webdriver
 import unittest
-from Day1.Pages.loginPage import LoginPage
+from selenium import webdriver
 from Day1.Pages.homePage import HomePage
-
-
-
+from Day1.Pages.loginPage import LoginPage
 
 class LoginTest(unittest.TestCase):
     @classmethod
