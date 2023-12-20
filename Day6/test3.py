@@ -1,10 +1,19 @@
 import unittest
 
 
+def setup_module():
+    print("Setup Module started")
+
+
+def teardown_module():
+    print("Tear Down Module")
+
+
 class AppTesting(unittest.TestCase):
     @classmethod
     def setUp(self):
         print("this is a login test")
+
     @classmethod
     def tearDown(self):
         print("This is a logout test")
@@ -16,6 +25,7 @@ class AppTesting(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         print(".....logging out from app;ication ")
+
     def test_search(self):
         print("Search test  ")
 
